@@ -8,11 +8,11 @@ function Portfolio() {
       <div className="underline"></div>
       <>
         {projectData.map((item) => {
-          const { id, img, name, description } = item;
+          const { id, img, name, description, url } = item;
           return (
             <article key={id}>
               <div className="data-div">
-                <img src={img} alt={name} />
+                <img src={img} alt={name} onClick={() => window.open(url)} />
                 <div className="image-overlay">
                   <div className="title">
                     <p className="image_description">{description}</p>
@@ -41,18 +41,17 @@ const Wrapper = styled.section`
     width: 35%;
     height: 20rem;
     border: 1px solid #000;
-    margin: 2rem auto;
+    margin: 3rem auto;
     border-radius: 10px;
     transition: transform 2s;
-    position: relative;
-    display: block;
     z-index: -1;
+    object-fit: cover;
   }
 
   .data-div img:hover {
-    opacity: 0.4;
     background-color: #000;
     cursor: pointer;
+    z-index: -1;
   }
   .underline {
     width: 6rem;
@@ -99,6 +98,12 @@ const Wrapper = styled.section`
   @media screen and (min-width: 1200px) {
     .data-div img {
       object-fit: cover;
+    }
+  }
+
+  @media screen and (min-height: 319px) and (max-height: 414px) {
+    .data-div img {
+      object-fit: contain;
     }
   }
 `;

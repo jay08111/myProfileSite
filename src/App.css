@@ -56,7 +56,8 @@ h1 {
   }
   /*PortFolio component*/
   #portfolio {
-    min-height: 65vh;
+    height: 65vh;
+    min-height: 100vh;
   }
   /*career component*/
   #career {
@@ -94,7 +95,8 @@ h1 {
 
   /*PortFolio component*/
   #portfolio {
-    min-height: 65vh;
+    height: 65vh;
+    min-height: 100vh;
   }
   /*career component*/
   #career {
@@ -156,6 +158,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 60vh;
+    min-height: 100vh;
   }
   /*career component*/
   #career {
@@ -175,6 +178,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 60vh;
+    min-height: 100vh;
   }
   /*career component*/
   #career {
@@ -211,6 +215,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 70vh;
+    min-height: 100vh;
   }
   /*Contact component*/
   #contact {
@@ -223,14 +228,20 @@ h1 {
     min-height: 100vh;
   }
 }
-@media screen and (min-height: 767px) and (max-height: 770px) {
+@media screen and (max-height: 280px) {
   /*About component*/
   #about {
-    min-height: 90vh;
+    height: 170vh;
   }
-  /*career component*/
-  #career {
-    font-size: 1.5rem;
+  /*PortFolio component*/
+  #portfolio {
+    height: 100vh;
+    min-height: 150vh;
+  }
+  /*Contact component*/
+  #contact {
+    height: 120vh;
+    margin: 5rem auto;
   }
 }
 @media screen and (min-height: 319px) and (max-height: 414px) {
@@ -241,6 +252,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 100vh;
+    min-height: 132vh;
   }
   /*Contact component*/
   #contact {
@@ -248,18 +260,13 @@ h1 {
     margin: 5rem auto;
   }
 }
-@media screen and (max-height: 280px) {
+@media screen and (min-height: 767px) and (max-height: 770px) {
   /*About component*/
   #about {
-    height: 170vh;
+    min-height: 90vh;
   }
-  /*PortFolio component*/
-  #portfolio {
-    height: 100vh;
-  }
-  /*Contact component*/
-  #contact {
-    height: 120vh;
-    margin: 5rem auto;
+  /*career component*/
+  #career {
+    font-size: 1.5rem;
   }
 }

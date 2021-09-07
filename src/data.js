@@ -23,5 +23,13 @@ export const projectData = [
     img: `${process.env.PUBLIC_URL + "/ProfileSite.png"}`,
     name: "Profile Project",
     description: "제 프로필 프로젝트 입니다.",
+    url: "https://friendly-noyce-3b504d.netlify.app/",
+  },
+  {
+    id: 2,
+    img: `${process.env.PUBLIC_URL + "/Todolist.png"}`,
+    name: "Todo list",
+    description: "미니프로젝트 투두리스트 입니다.",
+    url: "https://thirsty-curran-65c1de.netlify.app/",
   },
 ];
