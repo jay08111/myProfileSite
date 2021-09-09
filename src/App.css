@@ -263,7 +263,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 100vh;
-    min-height: 150vh;
+    min-height: 180vh;
   }
   /*Contact component*/
   #contact {
@@ -284,7 +284,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 100vh;
-    min-height: 132vh;
+    min-height: 162vh;
   }
   /*Contact component*/
   #contact {
@@ -304,6 +304,10 @@ h1 {
   /*career component*/
   #career {
     font-size: 1.5rem;
+    height: 100vh;
+    min-height: 120vh;
+  }
+  #portfolio {
     height: 100vh;
     min-height: 120vh;
   }
