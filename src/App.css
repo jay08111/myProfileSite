@@ -57,7 +57,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 65vh;
-    min-height: 100vh;
+    min-height: 110vh;
   }
   /*career component*/
   #career {
@@ -95,8 +95,8 @@ h1 {
 
   /*PortFolio component*/
   #portfolio {
-    height: 65vh;
-    min-height: 100vh;
+    height: 70vh;
+    min-height: 120vh;
   }
   /*career component*/
   #career {
