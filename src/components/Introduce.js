@@ -106,7 +106,7 @@ const Wrapper = styled.section`
       display: block;
       height: 30vh;
       width: 35vw;
-      margin: 17rem 0 0 1rem;
+      margin: 12rem 0 0 1rem;
     }
   }
 `;
