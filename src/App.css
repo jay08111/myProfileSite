@@ -103,8 +103,7 @@ h1 {
   /*career component*/
   #career {
     height: 100vh;
-    min-height: 155vh;
-    font-size: 0.6rem;
+    min-height: 200vh;
   }
   #contact {
     height: 100vh;
@@ -147,6 +146,18 @@ h1 {
   }
   #about .underline {
     margin: 0.4rem auto 3.5rem auto;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 542px) {
+  #career {
+    height: 100vh;
+    min-height: 110vh;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 721px) {
+  #career {
+    height: 100vh;
+    min-height: 120vh;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -232,6 +243,10 @@ h1 {
   /*Contact component*/
   #contact {
     height: 100vh;
+  }
+  #career {
+    height: 100vh;
+    min-height: 130vh;
   }
 }
 @media screen and (max-width: 280px) {
