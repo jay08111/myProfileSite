@@ -36,7 +36,7 @@ function Header() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-120}
+          offset={-130}
           duration={500}
           className="nav-link"
         >

@@ -62,6 +62,8 @@ h1 {
   /*career component*/
   #career {
     font-size: 0.6rem;
+    height: 200vh;
+    min-height: 200vh;
   }
 }
 /*footer component*/
@@ -90,7 +92,7 @@ h1 {
   /*About component*/
   #about {
     height: 130vh;
-    min-height: 130vh;
+    min-height: 140vh;
   }
 
   /*PortFolio component*/
@@ -100,6 +102,8 @@ h1 {
   }
   /*career component*/
   #career {
+    height: 100vh;
+    min-height: 155vh;
     font-size: 0.6rem;
   }
   #contact {
@@ -111,6 +115,7 @@ h1 {
     text-align: center;
   }
 }
+
 @media screen and (min-width: 375px) and (max-width: 378px) {
   /*About component*/
   #about {
@@ -127,6 +132,7 @@ h1 {
   }
   #career {
     font-size: 0.8rem;
+    min-height: 130vh;
   }
 }
 @media screen and (min-width: 418px) and (max-width: 767px) {
@@ -143,7 +149,6 @@ h1 {
     margin: 0.4rem auto 3.5rem auto;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*Header component*/
   .active-nav {
@@ -163,10 +168,17 @@ h1 {
   /*career component*/
   #career {
     font-size: 1.2rem;
+    height: 224vh;
   }
   /*footer component*/
   .footer {
     text-align: center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 769px) {
+  #career {
+    height: 100vh;
+    min-height: 120vh;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -243,6 +255,11 @@ h1 {
     height: 120vh;
     margin: 5rem auto;
   }
+  /*Career component*/
+  #career {
+    height: 120vh;
+    min-height: 240vh;
+  }
 }
 @media screen and (min-height: 319px) and (max-height: 414px) {
   /*About component*/
@@ -259,6 +276,10 @@ h1 {
     height: 100vh;
     margin: 5rem auto;
   }
+  #career {
+    height: 100vh;
+    min-height: 230vh;
+  }
 }
 @media screen and (min-height: 767px) and (max-height: 770px) {
   /*About component*/
@@ -268,5 +289,7 @@ h1 {
   /*career component*/
   #career {
     font-size: 1.5rem;
+    height: 100vh;
+    min-height: 120vh;
   }
 }
