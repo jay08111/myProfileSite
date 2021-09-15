@@ -18,7 +18,7 @@ function Introduce() {
       </article>
       <article className="right">
         <img
-          src={process.env.PUBLIC_URL + "/IMG_3927.JPG"}
+          src={process.env.PUBLIC_URL + "/byunhoyeoun.jpg"}
           alt="me"
           className="profile-img"
         />
@@ -36,7 +36,7 @@ const Wrapper = styled.section`
   }
   .right .profile-img {
     width: 30vw;
-    height: 30vw;
+    height: 30vh;
     object-fit: cover;
     border-radius: 20px;
     margin: 5rem 7.2rem;
