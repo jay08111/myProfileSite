@@ -229,9 +229,9 @@ h1 {
   }
   #main .right .profile-img {
     display: block;
-    height: 50vh;
+    height: 70vh;
     width: 35vw;
-    margin: 6rem 0 0 1rem;
+    margin: 3rem 0 0 1rem;
   }
   /*About component*/
   #about {
@@ -240,7 +240,7 @@ h1 {
   /*PortFolio component*/
   #portfolio {
     height: 70vh;
-    min-height: 100vh;
+    min-height: 120vh;
   }
   /*Contact component*/
   #contact {
@@ -248,7 +248,7 @@ h1 {
   }
   #career {
     height: 100vh;
-    min-height: 130vh;
+    min-height: 100vh;
   }
 }
 @media screen and (max-width: 280px) {

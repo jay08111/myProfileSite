@@ -28,6 +28,7 @@ function Portfolio() {
 }
 const Wrapper = styled.section`
   height: 80vh;
+  min-height: 100vh;
   overflow: auto;
   h1 {
     text-align: center;
@@ -46,12 +47,11 @@ const Wrapper = styled.section`
     transition: transform 2s;
     z-index: -1;
     object-fit: cover;
-  }
-
-  .data-div img:hover {
-    background-color: #000;
-    cursor: pointer;
-    z-index: -1;
+    &:hover {
+      background-color: #000;
+      cursor: pointer;
+      z-index: -1;
+    }
   }
   .underline {
     width: 6rem;

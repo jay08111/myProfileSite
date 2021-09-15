@@ -88,9 +88,9 @@ const Wrapper = styled.section`
     }
     .right .profile-img {
       display: block;
-      height: 30vh;
+      height: 33vh;
       width: 35vw;
-      margin: 12rem 0 0 1rem;
+      margin: 10rem 0 0 1rem;
     }
   }
   @media screen and (min-width: 812px) and (max-width: 850px) {

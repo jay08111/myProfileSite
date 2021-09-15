@@ -5,7 +5,7 @@ function Career() {
     <Wrapper id="career">
       <article>
         <div className="career-list">
-          <h1>경력사항</h1>
+          <h1 className="heading-one">경력사항</h1>
           <div className="underline"></div>
         </div>
         <div className="heading">
@@ -59,12 +59,10 @@ const Wrapper = styled.div`
   height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto 1rem auto;
+  margin: -4rem auto 1rem auto;
   flex-wrap: wrap;
   .career-list {
-    margin: 2rem auto;
+    margin: 3rem auto 4rem auto;
     text-align: center;
     font-size: 1.4rem;
   }
@@ -72,6 +70,10 @@ const Wrapper = styled.div`
     text-align: center;
     margin-bottom: 1.3rem;
     font-size: 1rem;
+  }
+  .heading-one {
+    display: inline-block;
+    margin-top: 4rem;
   }
   .description {
     text-align: center;
@@ -82,9 +84,9 @@ const Wrapper = styled.div`
   }
   .underline {
     width: 6rem;
-    height: 0.1rem;
+    height: 0.15rem;
     background-color: #000;
-    margin: 0.7rem auto 1rem auto;
+    margin: 0.2rem auto 1rem auto;
   }
   @media screen and (max-width: 280px) {
     p {
