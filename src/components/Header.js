@@ -23,7 +23,7 @@ function Header() {
           to="main"
           spy={true}
           smooth={true}
-          offset={-300}
+          offset={-100}
           duration={500}
           className="home"
         >
@@ -36,7 +36,7 @@ function Header() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-130}
+          offset={-120}
           duration={500}
           className="nav-link"
         >
@@ -94,16 +94,14 @@ const Wrapper = styled.nav`
     align-items: center;
     list-style: none;
     font-size: 1.5rem;
-    padding: auto;
-    position: relative;
   }
   .nav-link {
     cursor: pointer;
     padding: 0.4rem;
-  }
-  .nav-link:hover {
-    border-bottom: 1px solid #000;
-    margin-top: 0.5rem;
+    &:hover {
+      border-bottom: 1px solid #000;
+      margin-top: 0.5rem;
+    }
   }
   .home {
     position: absolute;

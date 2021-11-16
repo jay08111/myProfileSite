@@ -8,17 +8,18 @@ function Footer() {
         Copyright &copy; {new Date().getFullYear()}
         <span className="copy-right"> made by hoYeoun byun</span>
       </h3>
-      <h1 className="logo">
+      <span className="logo">
         <AiTwotoneFire />
-      </h1>
+      </span>
     </Wrapper>
   );
 }
 const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #000;
-  max-width: 100vw;
+  width: 100vw;
   height: 5rem;
   h3 {
     font-size: 1.6rem;
@@ -29,7 +30,10 @@ const Wrapper = styled.footer`
     color: hsl(22, 31%, 52%);
   }
   .logo {
+    font-size: 2rem;
     color: hsl(22, 31%, 52%);
+    display: flex;
+    margin-left: 0.35rem;
   }
   @media screen and (max-width: 280px) {
     .copy-right {

@@ -34,33 +34,26 @@ function About() {
   );
 }
 
-const Wrapper = styled.div`
-  height: 30vh;
+const Wrapper = styled.section`
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
   background-color: #fafafa;
-
+  min-height: 100vh;
   .about {
-    flex: 1;
     text-align: center;
   }
   .about h1 {
     padding-top: 1rem;
     font-size: 2.6rem;
   }
-  .about-me {
-    display: flex;
-    justify-content: flex-end;
-  }
   .description {
     text-align: center;
     margin: 5.5rem auto;
     font-size: 1.8rem;
+    line-height: 2;
     font-family: "Klee One", cursive;
-    flex-wrap: wrap;
-  }
-  .description p {
-    margin-bottom: 0.8rem;
   }
   .underline {
     width: 6rem;
@@ -90,7 +83,7 @@ const Wrapper = styled.div`
       margin: 0.4rem auto 0.8rem auto;
     }
     .about .description {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin: 0;
     }
   }
@@ -117,14 +110,6 @@ const Wrapper = styled.div`
     .about .description {
       font-size: 1.6rem;
       margin: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .about h1 {
-      font-size: 2.2rem;
-    }
-    .about .description {
-      font-size: 1.5rem;
     }
   }
 `;

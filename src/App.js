@@ -1,18 +1,20 @@
 import React from "react";
-import Introduce from "./components/Introduce";
-import About from "./components/About";
-import Career from "./components/Career";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
+import {
+  Introduce,
+  About,
+  Career,
+  Header,
+  Footer,
+  Contact,
+  Projects,
+} from "./components/index";
 function App() {
   return (
     <main className="main">
       <Header />
       <Introduce />
       <About />
-      <Portfolio />
+      <Projects />
       <Career />
       <Contact />
       <Footer />

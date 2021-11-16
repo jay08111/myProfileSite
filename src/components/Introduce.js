@@ -9,10 +9,10 @@ function Introduce() {
         <h1>변호연 이라고 합니다.</h1>
         <h1>junior Front-end Web Developer</h1>
         <div className="logo">
-          {logoData.map((items) => (
-            <a href={items.url} key={items.id}>
-              {items.icon}
-            </a>
+          {logoData.map(({ id, url, icon }) => (
+            <span key={id} onClick={() => window.open(url)}>
+              {icon}
+            </span>
           ))}
         </div>
       </article>
@@ -28,24 +28,27 @@ function Introduce() {
 }
 const Wrapper = styled.section`
   display: flex;
-  height: 30vh;
-  min-height: 80vh;
+  padding: 5rem 0;
   text-transform: capitalize;
+  min-height: 100vh;
   .right {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .right .profile-img {
     width: 30vw;
-    height: 30vh;
+    height: 70vh;
     object-fit: cover;
     border-radius: 20px;
-    margin: 5rem 7.2rem;
     z-index: -1;
   }
   .left {
     flex: 1;
     text-align: center;
     margin: auto 0;
+    font-size: 1.6rem;
   }
   .left h1 {
     margin-bottom: 0.5rem;
@@ -61,10 +64,12 @@ const Wrapper = styled.section`
     font-size: 2.5rem;
     justify-content: space-around;
     width: 30%;
-    margin: auto;
+    margin: 0 auto;
   }
-  .logo a {
+  .logo span {
     color: #000;
+    cursor: pointer;
+    margin-top: 0.35rem;
   }
   @media screen and (max-width: 280px) {
     .left {
@@ -86,16 +91,13 @@ const Wrapper = styled.section`
     .left {
       font-size: 1.4rem;
     }
-    .right .profile-img {
-      display: block;
-      height: 33vh;
-      width: 35vw;
-      margin: 10rem 0 0 1rem;
-    }
-  }
-  @media screen and (min-width: 812px) and (max-width: 850px) {
     .right {
-      display: none;
+      display: flex;
+      align-items: center;
+    }
+    .right .profile-img {
+      height: 70vh;
+      width: 40vw;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -103,10 +105,12 @@ const Wrapper = styled.section`
       font-size: 1.5rem;
     }
     .right .profile-img {
-      display: block;
-      height: 30vh;
-      width: 35vw;
-      margin: 12rem 0 0 1rem;
+      height: 70vh;
+      width: 40vw;
+    }
+    .right {
+      display: flex;
+      align-items: center;
     }
   }
 `;

@@ -22,15 +22,12 @@ function Career() {
           </p>
           <p>
             저는 회사의 지원하게 된 동기가 , 단순히 돈이 목적이 아닌 저 자신의
-            개발자로서 성장의 가능성을 보고 지원하였습니다, 저는 학원혹은
-            부트캠프를 다니지않았습니다 ,
-          </p>
-          <p>
-            부트캠프를 잠깐 다녀보았지만 실망스러운나머지 그만두게되었습니다.
+            개발자로서 성장의 가능성을 보고 지원하였습니다,
           </p>
           <p>
             배움의 길에는 왕도가 없다지만 ,저는 평생의 기간을 놓고 본다면
-            하루빨리 독학하는 방법을 터득하는것이 가장빠른길 이라고 생각했습니다
+            하루빨리 독학하는 방법을 터득하는것이 가장빠른길 이라고
+            생각했습니다.
           </p>
           <p>
             그것이 가장 빠르게 저를 성장시킬수 있는 방법이라고 생각했습니다,
@@ -54,17 +51,17 @@ function Career() {
     </Wrapper>
   );
 }
-const Wrapper = styled.div`
+const Wrapper = styled.section`
+  min-height: 100vh;
   background-color: #fafafa;
-  height: 80vh;
+  padding: 3rem 2rem;
   display: flex;
   justify-content: center;
-  margin: -4rem auto 1rem auto;
-  flex-wrap: wrap;
+  align-items: center;
   .career-list {
-    margin: 3rem auto 4rem auto;
+    margin: 0 auto 2rem auto;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .heading {
     text-align: center;
@@ -80,7 +77,7 @@ const Wrapper = styled.div`
   }
   p {
     font-size: 1.5rem;
-    line-height: 2;
+    line-height: 2.2;
   }
   .underline {
     width: 6rem;
@@ -94,13 +91,31 @@ const Wrapper = styled.div`
     }
   }
   @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding: 3rem 2rem;
     p {
-      font-size: 1rem;
+      font-size: 1.3rem;
+      line-height: 2;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .carrer-list h1 {
-      font-size: 1rem;
+    article {
+      padding: 3rem 2rem;
+    }
+    .heading-one {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    padding: 4rem 2.2rem;
+    .heading {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.5rem;
     }
   }
 `;

@@ -1,57 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import { projectData } from "../data";
-function Portfolio() {
+function Projects() {
   return (
     <Wrapper id="portfolio">
       <h1>Projects</h1>
       <div className="underline"></div>
-      <>
+      <div className="grid">
         {projectData.map((item) => {
           const { id, img, name, description, url } = item;
           return (
             <article key={id}>
               <div className="data-div">
                 <img src={img} alt={name} onClick={() => window.open(url)} />
-                <div className="image-overlay">
-                  <div className="title">
-                    <p className="image_description">{description}</p>
-                  </div>
-                </div>
+                <p>{description}</p>
               </div>
             </article>
           );
         })}
-      </>
+      </div>
     </Wrapper>
   );
 }
 const Wrapper = styled.section`
-  height: 80vh;
   min-height: 100vh;
-  overflow: auto;
+  padding: 5rem 0;
+  overflow: scroll;
   h1 {
     text-align: center;
     font-size: 2.6rem;
     margin: 0.5rem 0.7rem;
-  }
-  .data-div {
-    text-align: center;
-  }
-  .data-div img {
-    width: 35%;
-    height: 20rem;
-    border: 1px solid #000;
-    margin: 3rem auto;
-    border-radius: 10px;
-    transition: transform 2s;
-    z-index: -1;
-    object-fit: cover;
-    &:hover {
-      background-color: #000;
-      cursor: pointer;
-      z-index: -1;
-    }
   }
   .underline {
     width: 6rem;
@@ -59,6 +37,24 @@ const Wrapper = styled.section`
     background-color: #000;
     margin: 0 auto 1rem auto;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .data-div {
+    text-align: center;
+  }
+  .data-div img {
+    width: 70%;
+    height: 20rem;
+    border: 1px solid #000;
+    margin: 3rem auto;
+    border-radius: 10px;
+    z-index: -1;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 280px) {
     h1 {
       font-size: 2rem;
@@ -108,4 +104,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Portfolio;
+export default Projects;
