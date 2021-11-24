@@ -3,7 +3,7 @@
 - React 라이브러리를 이용하여 개발 
 - styled-component 사용 
 - Responsive Website 
-- 각 메뉴바 클릭시 각 메뉴에 해당하는 component로 
+- 각 메뉴바 클릭시 각 메뉴에 해당하는 component로 이동
 
 ## Prerequisite
 ```
