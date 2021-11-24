@@ -71,6 +71,7 @@ const Wrapper = styled.section`
   .heading-one {
     display: inline-block;
     margin-top: 4rem;
+    font-size: 2.4rem;
   }
   .description {
     text-align: center;
@@ -81,23 +82,20 @@ const Wrapper = styled.section`
   }
   .underline {
     width: 6rem;
-    height: 0.15rem;
+    height: 0.2rem;
     background-color: #000;
     margin: 0.2rem auto 1rem auto;
   }
-  @media screen and (max-width: 280px) {
+  @media screen and (max-width: 1200px) {
+    padding: 4rem 2.2rem;
+    .heading {
+      font-size: 1.2rem;
+    }
     p {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding: 3rem 2rem;
-    p {
-      font-size: 1.3rem;
-      line-height: 2;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     article {
       padding: 3rem 2rem;
     }
@@ -109,13 +107,18 @@ const Wrapper = styled.section`
       line-height: 2.2;
     }
   }
-  @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    padding: 4rem 2.2rem;
-    .heading {
-      font-size: 1.2rem;
-    }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 2rem;
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      line-height: 2;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    padding: 2rem 1.1rem;
+    p {
+      font-size: 1rem;
+      line-height: 2;
     }
   }
 `;

@@ -57,9 +57,47 @@ const Wrapper = styled.section`
   }
   .underline {
     width: 6rem;
-    height: 0.1rem;
+    height: 0.2rem;
     background-color: #000;
     margin: 0.7rem auto 1rem auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .about h1 {
+      font-size: 3rem;
+    }
+    .underline {
+      margin: 0.4rem auto 2rem auto;
+    }
+    .about .description {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    /*About component*/
+    .about h1 {
+      font-size: 3rem;
+    }
+    .underline {
+      margin: 0.4rem auto 2rem auto;
+    }
+    .about .description {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about h1 {
+      font-size: 2rem;
+    }
+    .underline {
+      margin: 0.4rem auto 0.8rem auto;
+    }
+    .about .description {
+      font-size: 1.1rem;
+      margin: 0;
+    }
   }
   @media screen and (max-width: 280px) {
     /*About component*/
@@ -72,43 +110,6 @@ const Wrapper = styled.section`
     }
     .about .description {
       font-size: 1.1rem;
-      margin: 0;
-    }
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    .about h1 {
-      font-size: 2rem;
-    }
-    .underline {
-      margin: 0.4rem auto 0.8rem auto;
-    }
-    .about .description {
-      font-size: 1.1rem;
-      margin: 0;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /*About component*/
-    .about h1 {
-      font-size: 3rem;
-    }
-    .underline {
-      margin: 0.4rem auto 2rem auto;
-    }
-    .about .description {
-      font-size: 1.6rem;
-      margin: 0;
-    }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    .about h1 {
-      font-size: 3rem;
-    }
-    .underline {
-      margin: 0.4rem auto 2rem auto;
-    }
-    .about .description {
-      font-size: 1.6rem;
       margin: 0;
     }
   }

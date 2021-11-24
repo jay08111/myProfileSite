@@ -29,6 +29,7 @@ h1 {
 }
 .active-nav {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   color: #fff;
   background-color: #000;
@@ -37,6 +38,43 @@ h1 {
   position: sticky;
   padding-top: 2rem;
   top: 0;
+}
+@media screen and (min-width: 1200px) {
+  /*Header component*/
+  .main-nav {
+    height: 8vh;
+  }
+  .active-nav {
+    height: 12vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*Header component*/
+  .active-nav {
+    flex-direction: column;
+    align-items: center;
+    height: 22vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*Header component*/
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    height: 16vh;
+  }
+  .active-nav {
+    flex-direction: column;
+    align-items: center;
+    height: 22vh;
+  }
+}
+@media screen and (max-width: 418px) {
+  /*Header component*/
+  .main-nav,
+  .active-nav {
+    height: 26vh;
+  }
 }
 @media screen and (max-width: 280px) {
   /*Header component*/
@@ -49,43 +87,5 @@ h1 {
     flex-direction: column;
     align-items: center;
     height: 16vh;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  /*Header component*/
-  .main-nav {
-    flex-direction: column;
-    align-items: center;
-    height: 16vh;
-  }
-  .active-nav {
-    flex-direction: column;
-    align-items: center;
-    height: 22vh;
-  }
-}
-@media screen and (min-width: 418px) and (max-width: 767px) {
-  /*Header component*/
-  .main-nav,
-  .active-nav {
-    height: 26vh;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /*Header component*/
-  .active-nav {
-    flex-direction: column;
-    align-items: center;
-    height: 22vh;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /*Header component*/
-  .main-nav {
-    height: 8vh;
-  }
-  .active-nav {
-    height: 12vh;
   }
 }

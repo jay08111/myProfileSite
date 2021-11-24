@@ -59,6 +59,7 @@ const Wrapper = styled.div`
     font-family: "Klee One", cursive;
     font-size: 1rem;
     border-radius: 5px;
+    border: 1px solid #000;
   }
   .form-input p {
     text-align: center;
@@ -91,80 +92,9 @@ const Wrapper = styled.div`
     font-size: 1rem;
     overflow: hidden;
   }
-  @media screen and (max-width: 280px) {
-    margin: 5rem auto;
+  @media screen and (max-width: 1200px) {
     .form-control {
-      width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1rem;
-      margin: auto;
-    }
-    .form-control .contact-heading {
-      font-size: 2rem;
-    }
-    .form-control .form-input p {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (min-height: 319px) and (max-height: 414px) {
-    margin: 5rem auto;
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    .form-control {
-      width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: auto;
-    }
-    .contact-heading {
-      font-size: 1.3rem;
-    }
-    .form-input p {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (min-width: 767px) and (max-width: 1023px) {
-    font-size: 1.5rem;
-    .form-control {
-      width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: auto;
-    }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    .form-control {
-      width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: auto;
-    }
-  }
-  @media screen and (max-height: 280px) {
-    .form-control {
-      height: 120vh;
-      width: 85vw;
-    }
-    .contact-heading {
-      display: block;
-      font-size: 2rem;
-      padding: 3.4rem;
-    }
-    .form-control .form-input textarea {
-      padding: 2rem;
-      margin: auto;
-    }
-    .form-input p {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .form-control {
-      width: 50vw;
+      width: 70vw;
       height: 80vh;
       margin: 4rem auto;
     }
@@ -180,19 +110,44 @@ const Wrapper = styled.div`
       margin: 2.4rem auto;
     }
   }
-  @media screen and (min-height: 319px) and (max-height: 414px) {
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
     .form-control {
-      height: 100vh;
       width: 85vw;
-    }
-    .contact-heading {
-      font-size: 2rem;
     }
     .form-control .form-input textarea {
       padding: 1.2rem;
       margin: auto;
     }
+  }
+  @media screen and (max-width: 768px) {
+    .form-control {
+      width: 85vw;
+    }
+    .form-control .form-input textarea {
+      padding: 1.2rem;
+      margin: auto;
+    }
+    .contact-heading {
+      font-size: 1.3rem;
+    }
     .form-input p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    margin: 5rem auto;
+    .form-control {
+      width: 85vw;
+    }
+    .form-control .form-input textarea {
+      padding: 1rem;
+      margin: auto;
+    }
+    .form-control .contact-heading {
+      font-size: 2rem;
+    }
+    .form-control .form-input p {
       font-size: 1rem;
     }
   }

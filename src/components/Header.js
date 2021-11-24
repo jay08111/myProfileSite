@@ -109,6 +109,24 @@ const Wrapper = styled.nav`
     cursor: pointer;
     font-size: 2.2rem;
   }
+  @media screen and (max-width: 1200px) {
+    .nav-link {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .nav-link {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .nav-link {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
   @media screen and (max-width: 280px) {
     .nav-link {
       font-size: 0.92rem;
@@ -116,29 +134,6 @@ const Wrapper = styled.nav`
     }
     .main-nav .logo .home {
       font-size: 1.4rem;
-    }
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    /*Header component*/
-    .nav-link {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /*Header component*/
-
-    .nav-link {
-      font-size: 1.4rem;
-      margin-top: 1rem;
-    }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    /*Header component*/
-
-    .nav-link {
-      font-size: 1.4rem;
-      margin-top: 1rem;
     }
   }
 `;
