@@ -1,5 +1,15 @@
-#My Profile Site
+###Description
+- 주니어 개발자 변호연의 사진 , 각종 sns아이디 , 자기소개 , 경력사항 , contact를 할수 있는 웹사이트 입니다 .
+- React 라이브러리를 이용하여 개발 
+- styled-component 사용 
+- Responsive Website 
+- 각 메뉴바 클릭시 각 메뉴에 해당하는 component로 
 
+###Prerequisite
 
--제 프로필 사이트입니다 ,
-반응형으로 개발하였으며 , 리액트 패키지 react-scroll 이라는것을 이용하여 , 메뉴 버튼을 누르면 해당 컴포넌트로 이동하게 구현해보았습니다, 한 페이지 안에 모든 컴포넌트를 담아서 클라이언트가 한눈에 보기 편하도록 설계 하였습니다 , 최대한 심플한 색상만을 사용하였고 , 중간중간마다 배경색을 살짝 바꾸어 눈의 피로도를 생각하였습니다. 해당 사이트를 통하여 저의 프로필 , 자기소개 , 프로젝트 , 그리고 저에게 메일을 보낼수 있습니다 .
+```
+npm install && npm start 
+
+```
+###URL
+[myProfile](https://whoami-hoyeoun.netlify.app/)
