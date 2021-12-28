@@ -24,10 +24,10 @@ const Wrapper = styled.footer`
   h3 {
     font-size: 1.6rem;
     color: #fff;
-  }
-  .copy-right {
-    text-transform: capitalize;
-    color: hsl(22, 31%, 52%);
+    .copy-right {
+      text-transform: capitalize;
+      color: hsl(22, 31%, 52%);
+    }
   }
   .logo {
     font-size: 2rem;
@@ -35,15 +35,23 @@ const Wrapper = styled.footer`
     display: flex;
     margin-left: 0.35rem;
   }
-  @media screen and (max-width: 280px) {
-    .copy-right {
-      font-size: 1.4rem;
+  @media screen and (max-width: 1199px) {
+    h3 {
+      font-size: 2rem;
     }
     .logo {
       display: none;
     }
   }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
+    h3 {
+      font-size: 2rem;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
     h3 {
       font-size: 1.58rem;
     }
@@ -51,17 +59,9 @@ const Wrapper = styled.footer`
       display: none;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    h3 {
-      font-size: 2rem;
-    }
-    .logo {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    h3 {
-      font-size: 2rem;
+  @media screen and (max-width: 280px) {
+    .copy-right {
+      font-size: 1.4rem;
     }
     .logo {
       display: none;

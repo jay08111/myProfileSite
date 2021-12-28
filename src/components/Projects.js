@@ -25,7 +25,7 @@ function Projects() {
 const Wrapper = styled.section`
   min-height: 100vh;
   padding: 5rem 0;
-  overflow: scroll;
+  overflow: hidden;
   h1 {
     text-align: center;
     font-size: 2.6rem;
@@ -40,20 +40,21 @@ const Wrapper = styled.section`
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    .data-div {
+      text-align: center;
+      img {
+        width: 70%;
+        height: 20rem;
+        border: 1px solid #000;
+        margin: 3rem auto;
+        border-radius: 10px;
+        z-index: -1;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
   }
-  .data-div {
-    text-align: center;
-  }
-  .data-div img {
-    width: 70%;
-    height: 20rem;
-    border: 1px solid #000;
-    margin: 3rem auto;
-    border-radius: 10px;
-    z-index: -1;
-    object-fit: cover;
-    cursor: pointer;
-  }
+
   @media screen and (max-width: 1200px) {
     h1 {
       font-size: 2.6rem;
@@ -68,13 +69,13 @@ const Wrapper = styled.section`
     h1 {
       font-size: 2rem;
     }
-    .data-div img {
-      width: 55%;
-      height: 30vh;
-    }
     .grid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+      img {
+        width: 55%;
+        height: 30vh;
+      }
     }
   }
   @media screen and (max-width: 768px) {

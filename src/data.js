@@ -45,4 +45,11 @@ export const projectData = [
     description: "바닐라 자바스크립트를 이용한 스파게티 레스토랑 입니다.",
     url: "https://pastashop-hoyeoun.netlify.app/",
   },
+  {
+    id: 4,
+    img: `${process.env.PUBLIC_URL + "/theBar.png"}`,
+    name: "The Bar",
+    description: "리액트와 리덕스 툴킷을 이용한 바 사이트 입니다.",
+    url: "https://thebar-react.netlify.app/",
+  },
 ];

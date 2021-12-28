@@ -62,30 +62,33 @@ const Wrapper = styled.section`
     margin: 0 auto 2rem auto;
     text-align: center;
     font-size: 2rem;
+    .heading-one {
+      display: inline-block;
+      margin-top: 4rem;
+      font-size: 2.4rem;
+    }
+    .underline {
+      width: 6rem;
+      height: 0.2rem;
+      background-color: #000;
+      margin: 0.2rem auto 1rem auto;
+    }
   }
   .heading {
     text-align: center;
     margin-bottom: 1.3rem;
     font-size: 1rem;
   }
-  .heading-one {
-    display: inline-block;
-    margin-top: 4rem;
-    font-size: 2.4rem;
-  }
+
   .description {
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    p {
+      font-size: 1.5rem;
+      line-height: 2.2;
+    }
   }
-  p {
-    font-size: 1.5rem;
-    line-height: 2.2;
-  }
-  .underline {
-    width: 6rem;
-    height: 0.2rem;
-    background-color: #000;
-    margin: 0.2rem auto 1rem auto;
-  }
+
   @media screen and (max-width: 1200px) {
     padding: 4rem 2.2rem;
     .heading {

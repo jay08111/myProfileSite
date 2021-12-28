@@ -23,7 +23,7 @@ function Header() {
           to="main"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-50}
           duration={500}
           className="home"
         >
@@ -36,7 +36,7 @@ function Header() {
           to="about"
           spy={true}
           smooth={true}
-          offset={-120}
+          offset={-100}
           duration={500}
           className="nav-link"
         >
@@ -58,7 +58,7 @@ function Header() {
           to="career"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-10}
           duration={500}
           className="nav-link"
         >
@@ -69,7 +69,7 @@ function Header() {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={-60}
           duration={500}
           className="nav-link"
         >

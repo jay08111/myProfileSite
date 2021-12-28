@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Klee+One&family=Nanum+Gothic:wght@400;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 h1 {
   text-transform: capitalize;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
 }
 .main {
   width: 100%;

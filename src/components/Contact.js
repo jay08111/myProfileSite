@@ -40,115 +40,115 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .contact-heading {
+      margin: auto;
+      font-size: 2.6em;
+    }
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      justify-content: center;
+      font-size: 1.2rem;
+      width: 70%;
+    }
+    input {
+      height: 2rem;
+
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #000;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      margin: 5rem auto;
+      width: 60%;
+      font-size: 1.4rem;
+      border: 1px solid #000;
+      border-radius: 16px;
+      box-shadow: none;
+      background: none;
+      cursor: pointer;
+      transition: all 1 linear;
+      height: 2rem;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        border-radius: 25px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 50%;
+      margin: 2.5rem auto;
+      border: 1px solid #000;
+      border-radius: 5px;
+      resize: none;
+      font-family: "Klee One", cursive;
+      font-size: 1rem;
+      overflow: hidden;
+    }
   }
 
-  .contact-heading {
-    margin: auto;
-    font-size: 2.6em;
-  }
-  .form-input {
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-    justify-content: center;
-    font-size: 1.2rem;
-    width: 70%;
-  }
-  .form-input input {
-    height: 2rem;
-    font-family: "Klee One", cursive;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #000;
-  }
-  .form-input p {
-    text-align: center;
-  }
-  button {
-    margin: 5rem auto;
-    width: 60%;
-    font-size: 1.4rem;
-    border: 1px solid #000;
-    border-radius: 16px;
-    box-shadow: none;
-    background: none;
-    cursor: pointer;
-    transition: all 1 linear;
-    height: 2rem;
-  }
-  button:hover {
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-  }
-  .form-input textarea {
-    width: 100%;
-    height: 50%;
-    margin: 2.5rem auto;
-    border: 1px solid #000;
-    border-radius: 5px;
-    resize: none;
-    font-family: "Klee One", cursive;
-    font-size: 1rem;
-    overflow: hidden;
-  }
   @media screen and (max-width: 1200px) {
     .form-control {
       width: 70vw;
       height: 80vh;
       margin: 4rem auto;
-    }
-    .form-input input {
-      padding: 1.1rem;
-    }
-    .contact-heading {
-      margin: 2rem auto;
-      font-size: 2.6rem;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: 2.4rem auto;
+      .form-input input {
+        padding: 1.1rem;
+      }
+      .contact-heading {
+        margin: 2rem auto;
+        font-size: 2.6rem;
+      }
+      .form-control .form-input textarea {
+        padding: 1.2rem;
+        margin: 2.4rem auto;
+      }
     }
   }
   @media screen and (max-width: 1024px) {
     font-size: 1.5rem;
     .form-control {
       width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: auto;
+      .form-control .form-input textarea {
+        padding: 1.2rem;
+        margin: auto;
+      }
     }
   }
   @media screen and (max-width: 768px) {
     .form-control {
       width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1.2rem;
-      margin: auto;
-    }
-    .contact-heading {
-      font-size: 1.3rem;
-    }
-    .form-input p {
-      font-size: 1rem;
+      .form-control .form-input textarea {
+        padding: 1.2rem;
+        margin: auto;
+      }
+      .contact-heading {
+        font-size: 1.3rem;
+      }
+      .form-input p {
+        font-size: 1rem;
+      }
     }
   }
   @media screen and (max-width: 280px) {
     margin: 5rem auto;
     .form-control {
       width: 85vw;
-    }
-    .form-control .form-input textarea {
-      padding: 1rem;
-      margin: auto;
-    }
-    .form-control .contact-heading {
-      font-size: 2rem;
-    }
-    .form-control .form-input p {
-      font-size: 1rem;
+      .form-control .form-input textarea {
+        padding: 1rem;
+        margin: auto;
+      }
+      .form-control .contact-heading {
+        font-size: 2rem;
+      }
+      .form-control .form-input p {
+        font-size: 1rem;
+      }
     }
   }
 `;
