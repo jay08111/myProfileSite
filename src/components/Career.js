@@ -78,6 +78,9 @@ const Wrapper = styled.section`
     text-align: center;
     margin-bottom: 1.3rem;
     font-size: 1rem;
+    h2 {
+      font-weight: 300;
+    }
   }
 
   .description {
