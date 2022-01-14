@@ -18,7 +18,7 @@ function Introduce() {
       </article>
       <article className="right">
         <img
-          src={process.env.PUBLIC_URL + "/byunhoyeoun.jpg"}
+          src="https://i.ibb.co/M6crFcF/byunhoyeoun.jpg"
           alt="me"
           className="profile-img"
         />
