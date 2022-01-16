@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://pastashop-hoyeoun.netlify.app/">
-    <img src="./public/byunhoyeoun.jpg" alt="Logo" width="100" height="100">
+    <img src="https://i.ibb.co/M6crFcF/byunhoyeoun.jpg" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Profile Site</h3>
